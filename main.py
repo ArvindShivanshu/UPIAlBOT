@@ -79,7 +79,18 @@ def menu(user_id):
 
     time.sleep(1)
     ref_bons(user_id)
-
+    #total withdrawl
+@bot.message_handler(commands=['totalwithdrawals'])
+def total_withdrawals(message):
+    if message.chat.id == admin_chat_id:
+        total_withdrawals = 0
+        total_amount = 0
+        for user in db.users.find():
+            total_withdrawals += user.get('total_with', 0)
+            total_amount += user.get('total_with', 0) * user.get('balance', 0)
+        bot.send_message(message.chat.id, f"Total withdrawals: {total_withdrawals}\nTotal amount: ₹{total_amount:.2f}")
+    else:
+        bot.send_message(message.chat.id, "This command is only available for the admin.")
 #add fund
 
 @bot.message_handler(commands=['addfund'])
