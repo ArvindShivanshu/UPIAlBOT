@@ -72,7 +72,7 @@ def menu_markup():
 
 def menu(user_id):
 
-    start_message = (f"<b>Welcome to DreamxUPI World ❤️\n\n"
+    start_message = (f"<b>Welcome to @UPIAlBOT World ❤️\n\n"
     "Choose Given Button To Earn....!! </b>")
 
     bot.send_message(chat_id=user_id, text= start_message,reply_markup=menu_markup(),parse_mode="HTML")
@@ -303,7 +303,7 @@ def send_join_message(message):
     if not h:
         join_markup = types.InlineKeyboardMarkup()
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+l7DwhY6HqIIwNGI9"),
             types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza")
         )
         join_markup.row(
@@ -508,7 +508,7 @@ def send_withdraw(message, amount, upi):
     # Deduct 10% from the amount
     amount_to_send = amount * 0.85
 
-    url = f"https://full2sms.in/api/v2/payout?mid=cFOslg3B4nZm2KjkwzWUbto7T&mkey=g7TmlIcZdXfRPCr4i15GJ3p6Q&guid=gckX20Pwy5nYdLpZleAJDvHBW&type=upi&amount={amount_to_send}&upi={upi}&info=telebot"
+    url = f"https://full2sms.in/api/v2/payout?mid=v4JX96Tb03fea1jMpoQRVyqlH&mkey=Qg4qan8Ge2itLpjbxNvPAz5FZ&guid=bXASNYrTZJEjL5uWMv6wFPfCi&type=upi&amount={amount_to_send}&upi={upi}&info=telebot"
 
     data = requests.get(url)
 
