@@ -315,7 +315,7 @@ def send_join_message(message):
         join_markup = types.InlineKeyboardMarkup()
         join_markup.row(
             types.InlineKeyboardButton(text="Join", url="https://t.me/+l7DwhY6HqIIwNGI9"),
-            types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza")
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+Rt3Rd8KJlfhlZDZl")
         )
         join_markup.row(
             types.InlineKeyboardButton(text="Join", url="https://t.me/joimxyza"),
@@ -497,7 +497,7 @@ def ref_bons(user_id):
 
     referred_by =  userData.get("ref_by", None) 
     referred = userData.get("referred",None)
-    ref_bonus = random.randint(1, 3)
+    ref_bonus = random.randint(1, 2)
 
 
     if referred_by != "none" and referred == None:
