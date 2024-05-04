@@ -318,11 +318,11 @@ def send_join_message(message):
             types.InlineKeyboardButton(text="Join", url="https://t.me/+Rt3Rd8KJlfhlZDZl")
         )
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/joimxyza"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+beNpva7X4g02ZmQ9"),
             types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza")
         )
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+cg5Kz8r3ZLUzMWQ9"),
             types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza")
         )
         
