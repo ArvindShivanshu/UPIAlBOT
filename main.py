@@ -18,7 +18,7 @@ bot_token = "6945775631:AAE7lVJ7bThs_pUnmdTTP1eef71o-MhErhc" # Telegram bot toke
 
 bot = telebot.TeleBot(bot_token)
 
-mongo_client = MongoClient(uri)
+mongo_client = MongoClient(mongo_url, socketTimeoutMS=60000, connectTimeoutMS=10000)
 
 db = mongo_client["dem-ref-bot"]
 
