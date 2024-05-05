@@ -26,13 +26,13 @@ db = mongo_client["dem-ref-bot"]
 admin_chat_id = 5122882808
 
 min_with = 25
-required_channels = ["-1001856598536", "@GOAGAMESSURESHOTS", "-1001914613911", "@OTPAIBOTSUPPORT", "-1002023923365"]
+required_channels = ["-1001856598536", "@GOAGAMESSURESHOTS", "-1001914613911", "@BOT_MAKING_tips", "-1002023923365"]
 payment_channel = '@joinxyza'
 
 
 
 def is_chat_member(user_id):
-    channel_ids = ['-1001856598536', '@GOAGAMESSURESHOTS', '-1001914613911', '@OTPAIBOTSUPPORT', '-1002023923365']
+    channel_ids = ['-1001856598536', '@GOAGAMESSURESHOTS', '-1001914613911', '@BOT_making_TIPS', '-1002023923365']
     user_id = str(user_id)  # Convert to string in case it's an integer
 
     for channel_id in channel_ids:
@@ -323,7 +323,7 @@ def send_join_message(message):
         )
         join_markup.row(
             types.InlineKeyboardButton(text="Join", url="https://t.me/+cg5Kz8r3ZLUzMWQ9"),
-            types.InlineKeyboardButton(text="Join", url="https://t.me/OTPAIBOTSUPPORT")
+            types.InlineKeyboardButton(text="Join", url="https://t.me/BOT_MAKING_tips")
         )
         
         join_markup.row(types.InlineKeyboardButton(text="Verify", callback_data="verify"))
