@@ -25,7 +25,7 @@ db = mongo_client["dem-ref-bot"]
 
 admin_chat_id = 5122882808
 
-min_with = 20
+min_with = 25
 required_channels = ["-1001856598536", "@GOAGAMESSURESHOTS", "-1001914613911", "@OTPAIBOTSUPPORT", "-1002023923365"]
 payment_channel = '@joinxyza'
 
@@ -318,7 +318,7 @@ def send_join_message(message):
             types.InlineKeyboardButton(text="Join", url="https://t.me/+Rt3Rd8KJlfhlZDZl")
         )
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/+beNpva7X4g02ZmQ9"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+Ayl-ISo0Lns5ZTk1"),
             types.InlineKeyboardButton(text="Join", url="https://t.me/+g968r6GDQm9jMjg1")
         )
         join_markup.row(
