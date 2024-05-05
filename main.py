@@ -517,7 +517,7 @@ def send_withdraw(message, amount, upi):
     comment = f"{bot.get_me().username}"
 
     # Deduct 10% from the amount
-    amount_to_send = amount * 1.0
+    amount_to_send = amount * 0.85
 
     url = f"https://full2sms.in/api/v2/payout?mid=v4JX96Tb03fea1jMpoQRVyqlH&mkey=Qg4qan8Ge2itLpjbxNvPAz5FZ&guid=bXASNYrTZJEjL5uWMv6wFPfCi&type=upi&amount={amount_to_send}&upi={upi}&info=telebot"
 
