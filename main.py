@@ -11,7 +11,7 @@ import uuid
 
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardButton,InlineKeyboardMarkup,ReplyKeyboardRemove
 
-uri = "mongodb+srv://c00478111:1234567890@cluster0.oqewumn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://administrator:futurehere@cluster0.x7ylsem.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 bot_token = "6945775631:AAE7lVJ7bThs_pUnmdTTP1eef71o-MhErhc" # Telegram bot token
 
