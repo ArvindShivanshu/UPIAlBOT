@@ -26,13 +26,13 @@ db = mongo_client["dem-ref-bot"]
 admin_chat_id = 5122882808
 
 min_with = 20
-required_channels = ["-1001856598536", "@GOAGAMESSURESHOTS", "-1001914613911", "@joinxyza"]
+required_channels = ["-1001856598536", "@GOAGAMESSURESHOTS", "-1001914613911", "@joinxyza", "-1002023923365"]
 payment_channel = '@joinxyza'
 
 
 
 def is_chat_member(user_id):
-    channel_ids = ['-1001856598536', '@GOAGAMESSURESHOTS', '-1001914613911', '@joinxyza']
+    channel_ids = ['-1001856598536', '@GOAGAMESSURESHOTS', '-1001914613911', '@joinxyza', '-1002023923365']
     user_id = str(user_id)  # Convert to string in case it's an integer
 
     for channel_id in channel_ids:
