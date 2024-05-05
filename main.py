@@ -322,8 +322,8 @@ def send_join_message(message):
             types.InlineKeyboardButton(text="Join", url="https://t.me/+g968r6GDQm9jMjg1")
         )
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/+cg5Kz8r3ZLUzMWQ9"),
-            types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza")
+            types.InlineKeyboardButton(text="Join", url="https://t.me/joinxyza"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/+cg5Kz8r3ZLUzMWQ9")
         )
         
         join_markup.row(types.InlineKeyboardButton(text="Verify", callback_data="verify"))
