@@ -322,7 +322,7 @@ def send_join_message(message):
             types.InlineKeyboardButton(text="Join", url="https://t.me/+g968r6GDQm9jMjg1")
         )
         join_markup.row(
-            types.InlineKeyboardButton(text="Join", url="https://t.me/indian_hackers_group"),
+            types.InlineKeyboardButton(text="Join", url="https://t.me/bot_making_tips"),
             types.InlineKeyboardButton(text="Join", url="https://t.me/UPIAiBOTSUPPORT")
         )
         
