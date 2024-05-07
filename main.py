@@ -287,7 +287,15 @@ def send_broadcast_with_btn5(message):
     except Exception as e:
         return
         # print(f"Hata: {e}")
-
+def deduct_referral_bonus(user_id):
+    """
+    Deduct 2 rupees from the referral account if the referred user leaves any of the required channels
+    """
+    userData = db.users.find_one({'user_id': user_id})
+    referred_by = userData.get("ref_by", None)
+    if referred_by is not None:
+        db.users.update_one({'user_id': int(referred_by)}, {'$inc': {'balance': -2}}, upsert=True)
+        bot.send_message(int(referred_by), "*❌ 2 INR deducted from your balance because one of your referrals left the channel*", parse_mode="markdown")
 
 @bot.message_handler(commands=['status'])
 def status_command(message):
